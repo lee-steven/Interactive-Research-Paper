@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #f0f0f0;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    font-family: Garamond;
+}
+
+nav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#title-container{
+    text-align: center;
+}
+
+h1, h2, h6{
+    font-family: Georgia;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#byLine h6,
+#byLine p{
+    display: inline;
+    padding:5px;
+    font-family: Garamond;
+    
+}
+
+#byLine h6{
+    font-weight: 700;
+}
+
+#byLine p{
+    font-size: 12px;
+}
+
+#one-introduction p{
+    font-family: Garamond;
+    text-align: center;
+    padding: 100px 450px;
+    line-height: 2;
+
+}
+
+#survey-introduction{
+    margin: 100px 400px;
+    padding: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#one-introduction #survey-introduction #sweater{
+    width: 150px;
+}
+
+#one-introduction #survey-introduction h6{
+    margin-bottom: 5px;
+}
+
+.stackChart{
+    height: 100%;
+    width: 40%;
+    margin-left: 30%;
+}
