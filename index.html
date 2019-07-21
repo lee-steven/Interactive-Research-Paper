@@ -23,10 +23,15 @@
         <a href-"#">8. About Me</a>
     </div>
 
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
         <source src="IntroVideo.mp4" type="video/mp4">
-    </video>
-            
+    </video> -->
+    <header id="video">
+            <video autoplay muted loop id="myVideo">
+                    <source src="IntroVideo.mp4" type="video/mp4">
+            </video>
+    </header>  
+    
     <div id="title-container">
         <h1>Expedited Shipping at No Extra "Cost":</h1>
         <h2>The Environmental Harm of</h2>
@@ -191,6 +196,19 @@
                 navbar.classList.remove("sticky");
               }
             }
+    </script>
+
+    <script>
+        var viewportHeader = document.querySelector(".viewport-header");
+
+document.body.addEventListener("scroll", function(event) {
+  var opacity = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
+  var scale = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
+  document.documentElement.style.setProperty('--headerOpacity', opacity);
+  document.documentElement.style.setProperty('--headerScale', scale);
+});
+
+
     </script>
 </body>
 </html>

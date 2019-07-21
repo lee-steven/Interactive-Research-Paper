@@ -58,15 +58,15 @@ body{
     display: block;
     right: 0;
     bottom: 0;
-    width: 100%; 
-    height: 100%;
+    height:800px;
     margin: 0;
+    margin-bottom: 20px;
 
     filter: contrast(60%) brightness(70%);
   }
   
 #hamburger{
-    display: inline;
+    padding: 20px;
 }
 
 #title-container{
