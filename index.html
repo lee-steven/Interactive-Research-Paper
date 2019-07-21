@@ -107,7 +107,7 @@
             var stackedBar = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Traditional', 'Online', 'Online Expedited Shipping'],
+                labels: ['Traditional', 'Online', 'Expedited Shipping'],
                 datasets:[
                     {
                         label: 'Sorting & Collecting Center',
@@ -252,6 +252,35 @@
                 <br><br> 	In the past few years, Amazon added a no-rush shipping program. The program incentivizes us the customers to choose their “No-Rush Shipping” delivery — an option that delivers packages to customers in 6 business days — that gives customers promotions or discounts for certain products [5].  It’s difficult to say exactly how effective this has been the past few years as Amazon has yet to release any data on it, but it definitely is a great start in getting customers consider even for a little a non-expedited delivery option.
             </p>
 
+            <div class="barChart2">
+                    <canvas id="barChart2" width="400" height="400"></canvas>
+            </div>
+            <script>
+                    var ctx = document.getElementById('barChart2');
+                    var myBarChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: 
+                        {
+                           labels: ["$1 Credit", "Green Shipping", "Choice to Donate"],
+                           datasets: [{
+                                label: "Percent of Customers that Chose Option for Tablet",
+                                data: [10, 16, 8],
+                                fill: false,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                borderWidth: 1
+                           }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes:[{ 
+                                    ticks: {beginAtZero: true}
+                                }]
+                            }
+                        }
+                    });
+            </script>
+
             <p class="introduction-2">
                 The Proceedings of the National Sciences of the United States of America (PNAS) conducted a study of 609 individuals to evaluate what Amazon could do to reduce their carbon footprint by simply being more transparent in their shipping options tab. The study had three groups: (1) the control group, in which the participants had the standard Amazon delivery options which included the No-Rush Shipping option with a $1 promotion incentive, (2) a group that saw “Make your shipping CARBON NEUTRAL when you choose FREE No-rush shipping” (3) a group that also got the $1 promotion incentive but if they chose No-Rush Shipping, had an option to donate a part of that to make their shipping “carbon neutral” —  offsetting carbon dioxide emissions by planting trees. The study revealed that the second option was just as if not more popular than the first option (the control group); people were more likely to choose No-Rush shipping when they were told their order would become carbon neutral [2]. 
             </p>
@@ -299,7 +328,7 @@
 
 
 
-            
+
             <!-- CONCLUSION -->
             <h3 id="conclusion">Conclusion</h3>
             <p class="introduction-2">
@@ -309,8 +338,29 @@
             </p>
 
             <h3 id="citation">Works Cited</h3>
+                <ol>
+                    <li>“A Decade of Facts and Figures.” <em>U.S. Postal Service</em>, facts.usps.com/table-facts/.</li>
+                    <li>Isley, Steven C., et al. “Online Purchasing Creates Opportunities to Lower the Life Cycle Carbon Footprints of Consumer Products.” <em>Proceedings of the National Academy of Sciences</em>, vol. 113, no. 35, 2016, pp. 9780-9785.</li>
+                    <li><em>Learn the Facts: Fuel Consumption and CO2</em>. Natural Resources Canada, 2014.</li>
+                    <li>Murdock, Andy, and University of California. “The Environmental Cost of Free 2-Day Shipping.” <em>Vox</em>, Vox, 17 Nov. 2017.</li>
+                    <li>"No-Rush Shipping." <em>Amazon</em>, Amazon.</li>
+                    <li>Nguyen, Nicole. “The Hidden Environmental Cost of Amazon Prime’s Free, Fast Shipping.” <em>Buzzfeed News</em> 21 July 2018. <em>Environmental Impact of Amazon Prime</em>. Web. July 2019. </li>
+                    <li>Umbra. “Two-Day Shipping: Free to You, but how Costly to the Planet?” <em>Grist</em>, Grist, 4 Aug. 2015.</li>
+                    <li>“UPS Pulse of the Online Shopper: A Customer Experience Study.” [Executive Summary]. <em>United Parcel Service of America, Inc. </em>(2017).</li>
+                    <li>Weideli, Dimitri. “Environmental Analysis of US Online Shopping MIT Center for Transportation & Logistics.” (2013).</li>
+                    <li>Wygonik, Erica & Goodchild, Anne. (2012).” Evaluating the Efficacy of Shared-use Vehicles for Reducing Greenhouse Gas Emissions: A U.S. Case Study of Grocery Delivery.”  Journal of Transportation Research Forum. 51.</li>
+                    <li>CNBC. “How Amazon Delivers on One-Day Shipping.” <em>Youtube</em>, Youtube, 15 July 2019. </li>
+                </ol>
 
+            <!-- ABOUT ME -->
             <h3 id="about">About Me</h3>
+            <p class="introduction-2">
+                Written by Steven Lee
+                <br><br> Steven Lee is a rising senior studying Computer Science and Fine Art at Washington University in St. Louis.
+                He has a passion for technology and the arts and is looking for a way to combine the two in the future.
+                In his free time, Steven can be found at a cafe drinking too much coffee or taking dance classes with his friends. 
+            </p>
+
 
         </div>
     </div>

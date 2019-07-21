@@ -132,7 +132,7 @@ margin-top: 1000px;
     margin-top: 0px;
 }
 
-#main h3{
+#main .essay-content h3{
     padding: 100px 30% 0px 30%;
     font-size: 22px;
 }
@@ -145,12 +145,13 @@ margin-top: 1000px;
     padding: 0px 32%;
 }
 
-.introduction-2{
+.introduction-2, ol{
     margin: 0 15%;
     padding: 15px 15%;
     line-height: 2;
     display: block;
     position: relative;
+    color: gray;
 }
 .stackChart{
     height: 100%;
@@ -165,13 +166,15 @@ margin-top: 1000px;
     text-align: center;
 }
 
-.barChart{
+.barChart,
+.barChart2{
     height: 100%;
     width: 500px;
     margin: 40px 0px;
     display:inline-block;
     padding: 0px 33%;
 }
+
 
 
 
