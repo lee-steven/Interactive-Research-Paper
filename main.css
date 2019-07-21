@@ -294,3 +294,12 @@ svg{
     animation: move 5s infinite linear;
     offset-path: path("M311.263306,457.892242h-8.976898c-1.4263,0-2.58255-1.15625-2.58255-2.58255v-3.358704h15.105988v2.394714C314.809845,456.304382,313.222015,457.892242,311.263306,457.892242z");
 }
+
+
+#optimizeTraffic{
+    height: 100%;
+    width: 500px;
+    margin: 40px 0px;
+    display:inline-block;
+    padding: 0px 32%;
+}
