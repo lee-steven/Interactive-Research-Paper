@@ -13,8 +13,8 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">1. Introduction</a>
-        <a href="#">2. How is it affecting our Environment?</a>
+        <a href="#video">1. Introduction</a>
+        <a href="#how-is">2. How is it affecting our Environment?</a>
         <a href="#">3. Shared-Use Vehicle Solution</a>
         <a href="#">4. Changing Customer Behavior</a>
         <a href="#">5. Optimizing Traffic</a>
@@ -38,7 +38,7 @@
         <h2>Express Packages & Possible Solutions</h2>
         <span id="byLine">
             <h6>By STEVEN LEE | stevenwonlee.com | @stevenwonlee | </h6>
-            <p>July 19, 2019</p>
+            <p>July 21, 2019</p>
         </span>
     </div>
 
@@ -52,10 +52,16 @@
                         Which one do you choose? 
                 </p>
             </div>
+            <div id ="one-introduction">
+                <p>
+                        Depending on how quickly you want this sweater your answers will vary but most likely you chose the two-day delivery option. Why wouldn’t you? It’s free and it’s faster than the 5-6 business day option. It couldn’t hurt right? 
+                </p>
+            </div>
 
             <!-- USPS Deliveries Line Graph -->
             <div class = "lineChart">
                 <canvas id="lineChart" width="400" height="400"></canvas>
+                
             </div>
             <script>
                 var ctx = document.getElementById('lineChart');
@@ -80,6 +86,17 @@
                 }
             });
             </script>
+
+            <p class="introduction-2">
+                Since 2011, the number of packages delivered nationally by USPS alone has increased by 88% [1]. We live in a time where we seek instant gratification. Companies like Amazon and Walmart and many others responded by offering two-day shipping and lately even two-hour shipping — ordering products and services has never been easier and more convenient. However, these benefits come with a hidden cost — a cost on our environment, our planet, our home. In this article, we will delve deeper into how expedited shipping negatively impacts the environment, analyze different solutions on reducing our carbon footprint from deliveries, and analyze the best possible solution.
+            </p>
+
+            <h3 id="how-is">How is Expedited Shipping Bad for the Environment?</h3>
+            <p class = "introduction-2">
+                    Online shopping, also sometimes known as e-commerce, is not inherently bad. In fact, online shopping may actually be better for our environment than traditional shopping at a brick-and-mortar store. 
+                    <br><br> Before I go into by how much online shopping was better for the environment with standard delivery, it’s important to note that the comparisons were based off <u>carbon footprint</u>. Carbon footprint is the estimation of the emission of greenhouse gases, which are the gases that contribute to climate change. And, since carbon dioxide, CO2, makes up 84% of total gases emission, the results from the research are expressed in kilograms of CO2 equivalent or kgCO2e. To give a better understanding of this measurement, 1 pound of gasoline produces 2.3 kilograms of CO2e, and this is roughly 3.3 miles of driving time for the average car [3].
+                    <br><br>To calculate the carbon footprints of traditional shopping and online shopping, <u><strong>four</strong></u> main components were evaluated for the two shopping methods: the packaging, transportation, energy consumption, and information flow. <em>Packaging</em> is a big factor towards our carbon footprint for both the retail and online shopper. Retail stores often have secondary packaging like shrink wrap while online shopping always comes in a cardboard box with inner packaging like foam peanuts, bubble wrap, or air cushions. <em>Transportation</em> includes our individual vehicles and delivery vehicles like trucks and airplanes. For this study specifically, the calculations were based on US average fuel consumption of consumers and approximated travel distances of delivery vehicles. <em>Energy consumption</em> has to do with electricity and natural gas usage. There are a multitude of factors that play into this such as the warehouses (where products are stored), the physical retail store, computer electricity usage, to name a few significant ones. Lastly is <em>information flow</em>, which sounds complicated but simply has to do with the printed labels needed to track and identify products.
+            </p>
 
             <!-- Carbon Footprint MIT Graph -->
             <div class ="stackChart">
@@ -164,6 +181,12 @@
             }
         });
             </script>
+
+            <p class = "introduction-2">
+                 Taking into account the carbon footprint costs of these components — packaging, transportation, energy consumption, and information flow — the total carbon footprint, measured by CO2 emissions, was <strong>16%</strong> less for online shopping when compared to traditional shopping [9]. This percentage can be increased or decreased depending on different factors such as using public transportation, going to a store that is on the way home instead of going to a store that is out of the way, optimizing shipping packaging by using less material, bundling items together, to name a few. But typically, online shopping has a smaller carbon footprint than traditional shopping.
+                <br><br>Online shopping only really begins to negatively impact our environment when expedited shipping comes into the playing field. The problem with options like two-day shipping and two-hour shipping is that these orders are not as <em>consolidated</em> if at all, meaning packages are not combined into a single, more effective shipment. Trucks are being sent out only half full and more frequently to deliver packages in time. Also, when we choose expedited options like these, it is much more likely that the product that we ordered online is not available at our closest warehouse and needs to come from a warehouse that actually has the product [7]. This means that the company sending our package has to use freight planes, which emit much more carbon, to send the package to us. And again, these planes are also not being filled to 100% capacity.
+                <br><br>It’s important to note that two-day shipping’s carbon emissions may differ on rare occasions. Occasionally ordering a product with two-day shipping may have the same carbon footprint as having ordered it with standard shipping (3-5+ days), and sometimes shopping at a physical store might be better for the environment for some people. It depends on how close we live to a warehouse or store, if that product is available at that warehouse, what transportation method we use, amongst other things. But don’t get me wrong, most people do not live near warehouses and delivery still will not be optimized for those people. So, despite this variability, expedited shipping leaves behind a <u><strong>much</strong></u> more significant carbon footprint.
+            </p>
         </div>
     </div>
 
