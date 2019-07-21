@@ -286,13 +286,13 @@ margin-top: 1000px;
 
 
 svg{
-    width: 500px;
+    width: 40%;
     padding: 0px 30%;
     margin: -100px 0px;
 }
 
 .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
-.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+.st1{fill:#f2f2f2;stroke:#000000;stroke-miterlimit:10;}
 .st2{fill:none;}
 .st3{font-family:'Helvetica-Light';}
 .st4{font-size:13px;}
