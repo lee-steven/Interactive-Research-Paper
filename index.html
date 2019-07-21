@@ -13,22 +13,20 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#video">1. Introduction</a>
-        <a href="#how-is">2. How is it affecting our Environment?</a>
-        <a href="#">3. Shared-Use Vehicle Solution</a>
-        <a href="#">4. Changing Customer Behavior</a>
-        <a href="#">5. Optimizing Traffic</a>
-        <a href="#">6. Conclusion</a>
-        <a href="#">7. Works Cited</a>
-        <a href-"#">8. About Me</a>
+        <a href="#video" onclick="closeNav()">1. Introduction</a>
+        <a href="#how-is" onclick="closeNav()">2. How is it affecting our Environment?</a>
+        <a href="#shared-use" onclick="closeNav()">3. Shared-Use Vehicle Solution</a>
+        <a href="#con-behavior" onclick="closeNav()">4. Changing Customer Behavior</a>
+        <a href="#optimize" onclick="closeNav()">5. Optimizing Traffic</a>
+        <a href="#conclusion" onclick="closeNav()">6. Conclusion</a>
+        <a href="#citation" onclick="closeNav()">7. Works Cited</a>
+        <a href-"#about" onclick="closeNav()">8. About Me</a>
     </div>
 
-    <!-- <video autoplay muted loop id="myVideo">
-        <source src="IntroVideo.mp4" type="video/mp4">
-    </video> -->
+
     <header id="video">
             <video autoplay muted loop id="myVideo">
-                    <source src="IntroVideo.mp4" type="video/mp4">
+                    <source src="IntroVideo2.mp4" type="video/mp4">
             </video>
     </header>  
     
@@ -90,6 +88,7 @@
             <p class="introduction-2">
                 Since 2011, the number of packages delivered nationally by USPS alone has increased by 88% [1]. We live in a time where we seek instant gratification. Companies like Amazon and Walmart and many others responded by offering two-day shipping and lately even two-hour shipping — ordering products and services has never been easier and more convenient. However, these benefits come with a hidden cost — a cost on our environment, our planet, our home. In this article, we will delve deeper into how expedited shipping negatively impacts the environment, analyze different solutions on reducing our carbon footprint from deliveries, and analyze the best possible solution.
             </p>
+
 
             <h3 id="how-is">How is Expedited Shipping Bad for the Environment?</h3>
             <p class = "introduction-2">
@@ -187,6 +186,132 @@
                 <br><br>Online shopping only really begins to negatively impact our environment when expedited shipping comes into the playing field. The problem with options like two-day shipping and two-hour shipping is that these orders are not as <em>consolidated</em> if at all, meaning packages are not combined into a single, more effective shipment. Trucks are being sent out only half full and more frequently to deliver packages in time. Also, when we choose expedited options like these, it is much more likely that the product that we ordered online is not available at our closest warehouse and needs to come from a warehouse that actually has the product [7]. This means that the company sending our package has to use freight planes, which emit much more carbon, to send the package to us. And again, these planes are also not being filled to 100% capacity.
                 <br><br>It’s important to note that two-day shipping’s carbon emissions may differ on rare occasions. Occasionally ordering a product with two-day shipping may have the same carbon footprint as having ordered it with standard shipping (3-5+ days), and sometimes shopping at a physical store might be better for the environment for some people. It depends on how close we live to a warehouse or store, if that product is available at that warehouse, what transportation method we use, amongst other things. But don’t get me wrong, most people do not live near warehouses and delivery still will not be optimized for those people. So, despite this variability, expedited shipping leaves behind a <u><strong>much</strong></u> more significant carbon footprint.
             </p>
+
+
+
+
+            <h3>So, What Should We Do?</h3>
+            <p class="introduction-2">
+                Great. Now we know that there is <u>ANOTHER</u> thing that we have to worry about negatively affecting our environment, like we didn’t have enough to worry about, right? Well believe it or not, for us a few, small lifestyle changes will heavily lower our carbon footprint. A lot of the changes that have to occur also depends on the company to change their infrastructure. There are a number of solutions, but I will only cover a few solutions that have been proposed or have been implemented already and discuss both their advantages and disadvantages.
+            </p>
+
+
+
+
+            <!-- SHARED USED VEHICLE SOLUTION -->
+            <h3 id="shared-use">The Shared-Use Vehicle Solution</h3>
+            <p class="introduction-2">
+                One proposed solution is very simple. It reduced the amount of carbon dioxide per customer on average between 20% and 75%. Proposed by Anne Goodchild, this solution suggests that people should always opt for online shopping over going to a physical store. This is because having a delivery service that optimizes a travel routing and delivery scheduling can end up reducing vehicle miles travelled by 85% to 95% which is much more effective that every individual household driving to their local store and back. 
+            </p>
+
+            <p class="introduction-2">
+                Research has found that the carbon emission reduction is largest roughly 80% to 90% when the delivery service has a proximity-assigned set of customers — meaning a store has a range of delivery. And even when delivery to customers were randomly assigned the reductions were still in between 17% to 75% which is still a very significant amount [10]. 
+            </p>
+
+            <div class="barChart">
+                <canvas id="barChart" width="400" height="400"></canvas>
+            </div>
+            <script>
+                var ctx = document.getElementById('barChart');
+                var myBarChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: 
+                    {
+                       labels: ["Passenger Travel", "Delivery Vehicle"],
+                       datasets: [{
+                            label: "kgCO2 per Customer",
+                            data: [0.575, 0.085],
+                            fill: false,
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgb(255, 99, 132)',
+                            borderWidth: 1
+                       }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes:[{ 
+                                ticks: {beginAtZero: true}
+                            }]
+                        }
+                    }
+                });
+            </script>
+
+            <p class="introduction-2">
+                This solution is very simple and effective which is great. Even though delivery vehicles emit more CO2 than personal vehicles, these delivery vehicles’ CO2 emissions were still statistically significantly fewer than personal vehicle use.
+                <br><br> However, the solution leaves quite a bit to be desired. This method would require these delivery services get to choose when a package gets delivered meaning two-day shipping would probably dissolve. It would drastically change the way we have been online shopping probably resulting in many non-happy customers. In addition, without some enforced rule, companies would probably be unwilling to make this change as their competition/other companies may continue to offer expedited shipping.
+            </p>
+
+
+
+            <!-- CHANGING CONSUMER BEHAVIOR -->
+            <h3 id="con-behavior">Changing Consumer Behavior</h3>
+        
+            <p class="introduction-2">
+                I’m going to be honest; I have Amazon Prime and have never once even considered using anything but two-day shipping (granted I did not know about the cost of expedited shipping until after all my research). It wouldn’t really make sense for me to choose standard delivery over two-day shipping, after all it’s free. But what would happen if companies like Amazon were to provide a green option for shipping so that customers didn’t immediately just opt for expedited shipping without a second thought? 
+                <br><br> 	In the past few years, Amazon added a no-rush shipping program. The program incentivizes us the customers to choose their “No-Rush Shipping” delivery — an option that delivers packages to customers in 6 business days — that gives customers promotions or discounts for certain products [5].  It’s difficult to say exactly how effective this has been the past few years as Amazon has yet to release any data on it, but it definitely is a great start in getting customers consider even for a little a non-expedited delivery option.
+            </p>
+
+            <p class="introduction-2">
+                The Proceedings of the National Sciences of the United States of America (PNAS) conducted a study of 609 individuals to evaluate what Amazon could do to reduce their carbon footprint by simply being more transparent in their shipping options tab. The study had three groups: (1) the control group, in which the participants had the standard Amazon delivery options which included the No-Rush Shipping option with a $1 promotion incentive, (2) a group that saw “Make your shipping CARBON NEUTRAL when you choose FREE No-rush shipping” (3) a group that also got the $1 promotion incentive but if they chose No-Rush Shipping, had an option to donate a part of that to make their shipping “carbon neutral” —  offsetting carbon dioxide emissions by planting trees. The study revealed that the second option was just as if not more popular than the first option (the control group); people were more likely to choose No-Rush shipping when they were told their order would become carbon neutral [2]. 
+            </p>
+
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="1.jpg" style="width:100%">
+                  <div class="text">Standard Amazon delivery options including No-Rush Shipping option with a $1 promotion incentive</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="2.jpg" style="width:100%">
+                  <div class="text">“Make your shipping CARBON NEUTRAL when you choose FREE No-rush shipping” </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="3.jpg" style="width:100%">
+                  <div class="text">Receive $1 promotion and had option to donate a part of that to make their shipping “carbon neutral”</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            
+            <p class="introduction-2">
+                If companies were to be more transparent with their customers about how their choices could help the environment, a good amount of them will go for it. In fact, this method of transparency, benefits all parties involve. The company will be able to save on fuel costs and gain company loyalty and trust due to their transparency while consumers receive discounts for their effort. More importantly, as a result, our world becomes a little less damaged as our carbon footprint decreases. The only problem with this solution is that the consumers have to make the smart choice to choose the No-Rush shipping option, and as many consumers pay for subscriptions to receive expedited shipping many may be unwilling to opt for the no-rush option. 
+            </p>
+
+
+
+
+            <!-- OPTIMIZING TRAFFIC -->
+            <h3 id="optimize">Optimizing Traffic</h3>
+
+
+
+
+
+            
+            <!-- CONCLUSION -->
+            <h3 id="conclusion">Conclusion</h3>
+            <p class="introduction-2">
+                There is no perfect or ideal solution for lessening our carbon footprint when using online shopping and expedited deliveries. The “ideal” solution would be to implement a combination of some of the solutions that I mentioned in my article — opting to online shop rather than driving back and forth, creating an incentive to change consumer behavior, and implementing more efficient vehicle transportation.
+                <br><br>Honestly, you might feel overwhelmed. You may ask, “What can I do?” I’m just one person, one individual, I can’t do anything about it”. But there are quite a few things that we as individuals can do that would significantly reduce our carbon footprint if we want to use online shopping. The simplest and most obvious is to shop less! If you don’t need it, don’t buy it. If you really need to buy something, don’t choose expedited shopping just because it’s free, and choose standard shipping. Lastly, try to group all your items into one shipping, so if there’s only one or two items in your cart, wait until it has at least four or five items.
+                <br><br>Online shopping is great. If I’m going to be honest, I’ll probably have to use expedited shipping sometime in the future, but the important thing is that we are aware and try to opt for standard shipping over it most of the time.  In the end, it really comes down to all of us — consumers and companies alike — to be more conscientious about the costs of our actions and giving a second thought to things we take for granted.
+            </p>
+
+            <h3 id="citation">Works Cited</h3>
+
+            <h3 id="about">About Me</h3>
+
         </div>
     </div>
 
@@ -232,6 +357,35 @@ document.body.addEventListener("scroll", function(event) {
 });
 
 
+    </script>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
     </script>
 </body>
 </html>
